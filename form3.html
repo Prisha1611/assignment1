@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <style>
+    .container {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      max-width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #4CAF50;
+      border-radius: 4px;
+      background-color: white;
+      color: black;
+    }
+
+
+    select option {
+      color: black;
+    }
+
+    select:active, select:hover {
+      background-color: rgba(76, 175, 80, 0.98);
+      color: white;
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+    <form>
+      <label>Name:</label><br>
+      <input type="text"><br><br>
+      <label>Email:</label><br>
+      <input type="email"><br><br>
+      <label>Age:</label><br>
+      <label for="dropdown">
+        <select id="dropdown">
+            <option value="Choice">--- Choose Age From Here ---</option>
+            <option value="<18">Below 18 years</option>
+            <option value="18-25">Between 18-25 years</option>
+            <option value="25-40">Between 25-40 years</option>
+            <option value="40-60">Between 40-60 years</option>
+            <option value=">60">Above 60 years</option>
+        </select>
+    </label>
+  </form>
+</div>
+</body>
+</html>
